@@ -10,7 +10,9 @@ var nameParam = getUrlParameter('name');
 
 if (nameParam) {
     document.getElementById('value').innerHTML=  nameParam + ' send You a wish';
+    document.querySelector('title').innerHTML= nameParam + "'s wish"
 } else {
+    document.querySelector('title').innerHTML=  "Send a wish"
     document.getElementById('value').innerHTML=  'Send You a wish';
 }
 function assignLink(){
